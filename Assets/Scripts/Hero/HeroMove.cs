@@ -9,11 +9,13 @@ namespace Screpts.Hero
         [SerializeField] private CharacterController _characterController;
         [SerializeField] private float _movementSpeed;
         [SerializeField] private Camera _camera;
+        [SerializeField] private CameraFollow _cameraFollow;
         private IInputServices _inputServices;
 
         private void Awake()
         {
             _inputServices = GameJoystick.InputServices;
+            _cameraFollow.Follow(gameObject);
         }
 
         private void Update()
