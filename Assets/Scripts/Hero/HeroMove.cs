@@ -1,6 +1,6 @@
-using Screpts.Services;
-using Scripts.CameraLogic;
+using Screpts.Services.Input;
 using Scripts.Infrastructure;
+using Scripts.Infrastructure.Services;
 using UnityEngine;
 
 namespace Screpts.Hero
@@ -9,13 +9,16 @@ namespace Screpts.Hero
     {
         [SerializeField] private CharacterController _characterController;
         [SerializeField] private float _movementSpeed;
-        [SerializeField] private Camera _camera;
+        private Camera _camera;
         private IInputServices _inputServices;
 
         private void Awake()
         {
-            _inputServices = Game.InputServices;
+            _inputServices = AllServices.Container.Single<IInputServices>();
         }
+
+        private void Start() =>
+      _camera = Camera.main;
 
         private void Update()
         {
