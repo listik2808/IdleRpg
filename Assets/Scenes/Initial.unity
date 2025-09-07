@@ -129,6 +129,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5107516187914241098, guid: b83910ab9f06da345b443142cff3e799, type: 3}
+      propertyPath: staticData
+      value: 
+      objectReference: {fileID: 11400000, guid: edb96932c02af7b45843d7bf6d8ae3bb, type: 2}
     - target: {fileID: 5523725516293705584, guid: b83910ab9f06da345b443142cff3e799, type: 3}
       propertyPath: m_Name
       value: GameBootstrapper

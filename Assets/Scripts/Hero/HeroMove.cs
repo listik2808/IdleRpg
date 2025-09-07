@@ -1,5 +1,4 @@
 using Screpts.Services.Input;
-using Scripts.Infrastructure;
 using Scripts.Infrastructure.Services;
 using UnityEngine;
 

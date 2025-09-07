@@ -1,5 +1,6 @@
 ﻿using Scripts.Infrastructure.Services;
 using Scripts.Infrastructure.State;
+using Scripts.StaticData;
 
 namespace Scripts.Infrastructure
 {
@@ -10,9 +11,9 @@ namespace Scripts.Infrastructure
 
         public static bool IsMobile => _isMobile;
         
-        public Game(ICoroutineRunner coroutineRunner)
+        public Game(ICoroutineRunner coroutineRunner,HeroStaticData heroStatic)
         {
-            StateMashine = new GameStateMashine(new SceneLoader(coroutineRunner), AllServices.Container);
+            StateMashine = new GameStateMashine(new SceneLoader(coroutineRunner), AllServices.Container, heroStatic);
         }
 
         public static void SetDevice(bool value)

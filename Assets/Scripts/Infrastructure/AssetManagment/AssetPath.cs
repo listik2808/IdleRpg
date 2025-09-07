@@ -3,7 +3,7 @@
     public static class AssetPath
     {
         public const string Hero = "Hero/Hero";
-        public const string Joystick = "Screen/CanvasJoystick";
+        public const string HUD = "Screen/HUD";
         public const string InitialPoint = "InitialPoint";
         public const string Initial = "Initial";
         public const string MainScena = "Main";

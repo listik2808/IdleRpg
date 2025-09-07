@@ -31,6 +31,8 @@ namespace Scripts.Infrastructure.State
         private void OnLoaded()
         {
             GameObject hero = _gameFactory.CreateHero(GameObject.FindWithTag(AssetPath.InitialPoint));
+            _gameFactory.CreateHud();
+            //отключать управление перед боем
         }
     }
 }

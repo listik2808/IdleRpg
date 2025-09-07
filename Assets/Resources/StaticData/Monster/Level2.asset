@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fcc7e5bea6b8946a199feae39f449c, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
-  monsterTypeId: 0
-  Hp: 0
-  Damage: 0
-  RewardXp: 0
-  PreparingAttack: 0
-  ChanceAppear: 0
-  Prefab: {fileID: 0}
+  monsterTypeId: 10
+  Hp: 14
+  Damage: 3
+  RewardXp: 2
+  PreparingAttack: 2
+  ChanceAppear: 65
+  Prefab: {fileID: 8109183493268324312, guid: c1e9db5cc3aa43a4ba80de9b118d8284, type: 3}
